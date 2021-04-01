@@ -1,8 +1,6 @@
 #projetoCP5A
 
-Inicialização de HTML/CSS, Javascript...
+Projeto de Implementação de HTML/CSS, Javascript , Java.
 
-remover commit;;;
 
-aprendendo usar
 
