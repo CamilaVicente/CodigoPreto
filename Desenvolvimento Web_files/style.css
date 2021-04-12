@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+
+    .center {
+        margin: auto;
+        width: 50%;
+    }
+    
+    .title {    
+        
+        width: 50%;
+             
+        margin: auto;
+        padding: 5px;
+        font-size: 17px;
+        font-family:'Roboto';
+        background-color: black;
+        border-radius: 3px;
+        color: white;
+        text-align: center;
+    }
+ 
+    .card {
+        border-style: none;      
+        border-radius: 10px;
+        margin: 30px 5px 15px 20px;      
+        padding: 10px 20px 15px 15px;
+    }
+
+    .card-title {
+        text-align: center;
+        font-family: 'Roboto',monospace;
+        font-weight: 1000;
+        font-size: 30px;
+
+    }
+    .card-content {
+        text-align: center;
+        font-family: 'New Tegomin', monospace;
+        font-weight: 800;        
+        font-size: 18px;
+    }
+     
+    #js {
+     background-color: rgb(215, 160, 67);
+    }
+    #css {
+     background-color: rgb(46, 111, 173);
+    }
+    #html {      
+     background-color: rgb(277, 88, 53);
+    }
+ 
