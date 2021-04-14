@@ -1,0 +1,39 @@
+.content {
+    height: 100vh;    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;   
+    align-items: flex-start;  
+    flex-direction: row;
+  }
+.card{
+    border: 1px solid#ccc;
+    box-sizing: content-box;
+    box-shadow: 5px 5px 3px grey;    
+    width: 200px;
+    height:auto;
+    margin:10px;
+    background: none;
+} 
+.card-content{
+    text-align: center;
+    padding: 10px;           
+}
+
+div.card-image img{      
+    height: auto;
+    width: 100%;       
+}
+.title{
+    text-align: center;
+}
+.button{
+
+    background-color: grey;
+    text-align: center; 
+    color:white;
+    padding: 10px ;
+    cursor:pointer;
+    font-size:14px;       
+
+}
