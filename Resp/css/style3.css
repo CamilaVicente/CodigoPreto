@@ -63,10 +63,10 @@ img{
         }
     /* tablets */
     }
-   /* @media only screen and (max-device-width : 1200px) {
+    @media only screen and (max-device-width : 1200px) {
         [class*="col-"]{
             width:100%;
         }
     /* computadores */
     }
-   */
+   
