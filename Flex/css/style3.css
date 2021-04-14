@@ -1,0 +1,12 @@
+.nav-bar{
+    display:flex;      
+    flex-direction: row;      
+}
+li{ 
+    
+    width: 100px 0px;
+    height:auto;
+    margin: 10px;
+    
+
+}
