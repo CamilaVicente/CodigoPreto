@@ -1,0 +1,96 @@
+.container{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.red{
+    
+    margin-bottom:20px;    
+    width: 500px;
+    height:500px;
+    background-color:white;
+    /*color: white;
+    transition: transform 1s, border-radius 1s;   */
+}
+.objeto{
+    width:60px;
+    height:60px;
+    background-color:  black;
+    position: relative;    
+    box-sizing:border-box;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count:1;
+    /*animation-direction: alternate;*/
+    animation-timing-function: ease-in-out;
+    animation-fill-mode:both;
+    animation-delay:2s;
+
+}
+
+@keyframes example {
+    from{
+        background-color: yellow;
+        left: 0px;
+        top:0px;
+    }
+    25%{
+        background-color: green;
+        animation-timing-function: linear;
+        left: 500px;
+        top:0px;
+    }
+    50%{
+
+        background-color: red;
+        animation-timing-function: linear;
+        left:500px;
+        top:500px;
+        transform: scale(2);
+    }
+    75%{
+        background-color: purple;
+        animation-timing-function: linear;
+        
+    }
+    to{
+        border:30px;
+        left:0px;
+        top:500px;
+
+        background-color:  blue;
+        /*transform: rotate(360deg);*/
+    }
+}
+/*.red:hover{
+    
+    transform: rotate3d(0.3,0.3,0.3,360deg);
+    border-radius: 10%;    
+}
+
+#ease{
+    transition:width 2s;
+    transition-timing-function: ease;
+}
+#linear{
+    transition:width 2s;
+    transition-timing-function: linear;
+}
+#ease-in{
+    transition:width 2s;
+    transition-timing-function: ease-in;
+}
+#ease-out{
+    transition:width 2s;
+    transition-timing-function: ease-out;
+}
+#ease-in-out{
+    transition:width 2s;
+    transition-timing-function: ease-in-out;
+}
+#bezier{
+    transition:width 2s;
+    transition-timing-function: cubic-bezier(0,99,0,99);
+}
+*/
