@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      @keyframes greenAnimation {
+        from {
+          width: 500px;
+        }
+        to {
+          height: 350px;
+          width: 350px;
+          border-radius: 50%;
+        }
+      }
+      @keyframes yellowAnimation {
+        from {
+        }
+        to {
+          transform: rotate(45deg);
+          width: 200px;
+          height: 200px;
+          border-radius: 15%;
+        }
+      }
+      @keyframes blueAnimation {
+        from {
+        }
+        to {
+          border-radius: 50%;
+        }
+      }
+      .main {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #green {
+        height: 500px;
+        width: 500px;
+        background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: greenAnimation;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      #yellow {
+        height: 300px;
+        width: 300px;
+        background-color: yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: yellowAnimation;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      #blue {
+        height: 150px;
+        width: 150px;
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: blueAnimation;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div id="green">
+        <div id="yellow">
+          <div id="blue">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
