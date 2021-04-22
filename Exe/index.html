@@ -8,7 +8,7 @@
       <link href="css/style.css" rel="stylesheet">
       
   </head>
-
+  
   <body>
     <div  id="welcome" class="title">
       <h1>Bem-vindo ao desenvolvimento Web</h1> 
@@ -42,6 +42,31 @@
       </div>
     </div>
   </div>
+  <a href="http://globo.com" style="display: none;" id="link"> Globo</a>
+  <script> 
+    let tit= document.getElemntById("titilo");
+    
+    tit.style.display = "none";
+    tit.style.backgroundColor = "Red";
+  
+    let center=document.querySelectorAll(".center");
+    for(let i = 0;i < center.length;i++){
 
+      center[i].style.color= "green";
+
+    }
+
+    let hrlink = document.getElementById("link");
+    hrlink.setAttribute("class","c
+    
+    
+    ");
+    hrlink.removeAttribute("style");
+    hrlink.setAttribute("href","https://uol.com.br");
+
+    if(hrlink.hasAttribute("style")){
+      console.log("Não era pra ter");
+    }
+  </script>
   </body>
 </html>

@@ -1,0 +1,55 @@
+.container{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.green{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom:20px;    
+    width: 500px;
+    height:500px;
+    background-color: green;
+    
+    /*transition: transform 1s, border-radius 1s;   */
+}
+.yellow{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom:20px;    
+    width: 500px;
+    height:500px;
+    background-color:yellow;
+    
+    /*transition: transform 1s, border-radius 1s;   */
+}
+.blue{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom:20px;    
+    width: 500px;
+    height:500px;
+    background-color: blue;
+    
+    /*transition: transform 1s, border-radius 1s;   */
+}
+.objeto{
+    width:60px;
+    height:60px;
+    background-color:  black;
+    position: relative;    
+    box-sizing:border-box;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count:1;
+    /*animation-direction: alternate;*/
+    animation-timing-function: ease-in-out;
+    animation-fill-mode:both;
+    animation-delay:2s;
+
+}
+@keyframes example
