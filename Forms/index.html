@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            input[type=text]{
+                padding;10px;
+                border-width: 2px;
+                border-radius: 8px;
+                border-color: green;
+                width: 20%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Cadastro de usuário</h1>
+
+        <form action="/salvar-usuario" method="POST">
+        
+            <label for="pnome">Primeiro nome:</label><input type="text" id="pname" name="pname" value="" placeholder="Digite seu primeiro nome" required><br><!--minlenght= "3" maxlenght="30"-->
+            <label for="snome">Segundo nome:</label><input type="text" id="sname" name="sname" value="" required><br>
+            <label for="data" >Nascimento:</label><input type="date" id="data" name="data" value="" required><br>
+            <label for="gender">Sexo:</label>
+            M:<input type="radio"name="gender" value="male" >
+            F:<input type="radio"name="gender" value="female" required><br>
+
+        <br>
+        <br>
+            <label for="country">País;</label>
+            <select name="country" id="country" required>
+                
+                <option disabled value></option>
+                <optgroup label="America Latina">
+                    
+                    <option value="Br" >Brasil</option>
+                    <option value="Ar" >Argentina</option>
+                    <option value="Me" >Mexico</option>
+                    <option value="Co" >Colombis</option>
+                    
+
+                </optgroup>
+                <optgroup label="America de Norte">
+
+
+                    <option value="Ca" >Canadá</option>
+                    <option value="Us" >Estados Unidos</option>
+                </optgroup>
+            </select>       
+        <br>
+        <br>
+        
+            <label for="mensagem">Digite sua Mensagem</label>
+            <textarea placeholder="Digite sua mensagem aqui!" cols="50" rows="10" name="mensagem" id="mensage" ></textarea>     
+        
+            
+        <br>
+        <br>
+             Brasileiro? Sim:<input type="radio" name="brasileiro" value="yes"> 
+             Não:<input type="radio" name="barsileiro" value="no" ><br>
+
+
+            Email:<input type="email" name="email" value="" required><br>
+            Senha:<input type="password" name="senha" value="" required><br>
+
+        <br>
+        <br>
+
+            Selecione o arquivo:<input type="file"value=""required><br>
+            <!--Selecione o arquivo:<input type="range" value=""><br>    -->      
+
+        <br>
+        <br>
+
+            Você aceita os termos e condições?<input type="checkbox" name="terms-accepted"><br>
+        <br>
+        <br>
+            <!--Botão por input:<input type="button" value="Salvar">-->
+
+            <button>Salvar</button>    
+                       
+        </form>
+
+    </body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=witdth, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" />
+
+        <title>Cadastro</title>
+
+    </head>
+    <body>
+        
+        <div  id="welcome" class="title">
+            
+            <h4>User Form</h4> 
+
+        </div>
+
+        <div class = "content">
+            
+            
+            <form>
+                
+
+                <label for="fname">Frist name</label><br><input type="text" id="fname" name="fname" value="" placeholder="Your name here..." required><br><!--minlenght= "3" maxlenght="30"-->
+                <label for="lname">Last name</label><br><input type="text" id="lname" name="lname" value="" placeholder="Your last name here..."required><br>
+                <label for="pwd">Password</label><br><input type="password" id="pwd"name="pwd" value="" placeholder="Your password"required><br>
+                <label for="pwd">Password Confirmation<br></label><input type="password" id="pwd"name="pwd" value=""placeholder="Comfirm your password" required><br>
+            
+                <label for="country">Country</label><br>
+                <select name="country" id="country" required>
+                    
+                    <option disabled value></option>
+                    <optgroup label="America Latina">
+                        
+                        <option value="Br" >Brasil</option>
+                        <option value="Ar" >Argentina</option>
+                        <option value="Me" >Mexico</option>
+                        <option value="Co" >Colombia</option>
+                        
+                    </optgroup>
+                    <optgroup label="America de Norte">
+                        <option value="Ca" >Canadá</option>
+                        <option value="Us" >Estados Unidos</option>
+                    </optgroup>
+                </select> 
+                <br>      
+
+                <input type="submit" value="Submit">
+        
+            </form>
+        </div>
+
+
+
+
+
+
+
+    </body>
+
+
+
+
+
+</html>
