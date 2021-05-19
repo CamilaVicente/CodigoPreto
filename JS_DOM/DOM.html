@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device=witdth, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">      
+     
+            <title>TextDOM </title>
+   </head>
+   
+   <body>
+
+      <h1 class= "item" id="titulo">Bem vindo!</h1>
+
+      <div class="img">
+            <img class="img" src="img/logik.png" alt="minhaLogo"/>
+         </div>
+         
+
+      <div class="content">
+         <div class="item" id="item-1">Home</div>
+         <div class="item" id="item-2">Conteúdo</div>
+         <div class="item" id="item-3">Aulas Gravadas</div>
+         <div class="item" id="item-4">Downloads</div>
+      </div>
+
+      <div class="form">
+            <form action="salvar-usuario" method="POST">
+      <label for="firstName">Nome: </label><br><input type="text" name="firstName" required><br>
+      <label for="secondName">Sobrenome: </label><br><input type="text" name="secondName"><br>
+
+      <label for="gender">Sexo: </label>Masculino: <input type="radio"name="gender" value="male"  required>Feminino:<input type="radio"name="gender" value="female" required><br>
+      <label for="dtNasc">Data de Nascimento: </label><input type="date" name="dtNasc" required><br>
+      <label for="email">Email: </label><br><input type="text" name="email" placeholder="Seu_Email@email.com" required><br>
+
+      <br><input type="submit" value="Salvar">
+      <button class="button" type="reset" value="limpar">Apagar</button>
+            </form>
+      </div>
+      <script type="text/javascript" src="script.js"></script>
+   </body>
+</html>

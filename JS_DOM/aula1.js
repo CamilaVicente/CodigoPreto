@@ -26,6 +26,6 @@ for(let i = 0; i<5;i++){
 }
 
 
-for (let numero = 1; numero<50 ; numero ++){
-    numero
+for (let numero = 1; numero<=50 ; numero ++){
+   console.log(numero)
 }

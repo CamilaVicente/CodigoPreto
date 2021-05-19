@@ -1,0 +1,90 @@
+.content{
+   display:flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   margin: 10px;
+}
+#titulo{
+   color : white;
+   display:flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   margin: 10px;
+
+}
+body{
+   background: url("img/earth-3866609_1280.jpg") no-repeat  fixed;
+   background-size: cover ;
+   width: 100%;
+   display:flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   
+}
+.item{
+   padding: 10px;
+   cursor: pointer;
+   border: none;
+   font-size: medium;
+   
+}
+.img{
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   height: 25vh;
+   border-radius: 8%;
+}
+.form{
+  /* column-count: 2;*/
+   border-radius: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 5px 5px 3px grey; 
+   width: 300px;
+   height: auto;
+   border: none ;
+   background-color:#f1f1f1;      
+   margin: auto;
+   padding: 10px; 
+}
+ input[type=text] {
+    width: 100%;
+    padding: 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-color:#f1f1f1;
+    border-style: 8px;
+  }
+  input[type="submit"]{
+     background-color: black;
+     text-align: center;
+     box-sizing: border-box;
+     width: 40%;
+     margin: 0 10px 0 15px;
+     border-radius: 10px;
+     color:white;
+    padding: 10px ;
+    cursor:pointer;
+    font-size:14px;
+  }
+ .button{
+    background-color: red;
+    text-align: center; 
+    box-sizing: border-box;
+    width: 40%;
+    margin: 0 10px;
+    border-radius: 10px;
+    color:white;
+    padding: 10px ;
+    cursor:pointer;
+    font-size:14px;       
+}

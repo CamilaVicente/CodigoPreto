@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device=witdth, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">  
+   </head>
+   <body style="background-color :black">
+
+   <h1 id="titulo"> bem-vindo</h1>
+  <h1 id="titulo" style="color:pink"> bem-vindo</h1>
+  <!-- <h1 id="id01">Old Heading</h1>-->
+   <h1 class="green">Hello!!</h1>
+   <p class="green">Esse é meu site :) </p>
+   <p class ="green">Todo dia é dia</p>
+   <div id="minhaLista"></div>
+
+   <a href="http://globo.com" style="display: none;" id="link"> Globo</a>
+
+
+   <script>
+   /*   // COMO ENCONTRAR UM ELEMENTO
+       var x = document.getElementById("titulo"); //pelo ID;
+       document.getElementsByTagName("p");//pela tag;
+       document.querySelectorAll('intro');//por seletores CSS especificos(id, class, tipo, atibuto, valores de atributos);
+      /* Este exemplo encontra o elemento do formulário com id="frm1", na coleção de formulários, e exibe todos os valores do elemento
+         var x = document.forms["frm1"];
+         var text = "";
+         var i;
+         for (i = 0; i < x.length; i++) {
+         text += x.elements[i].value + "<br>";
+         }
+         document.getElementById("demo").innerHTML = text;
+
+       /* var x= document.getElementById("xxx");      //Aqui ele encontra o elemento com id = "xxx" e todos os <p> dentro de xxx;
+       var y= xxx.getElementsByTagName("p");
+
+      // MUDANDO O CONTEUDO DE UM ATRIBUTO
+
+      // .innerHTML -altera o conteudo de um elemento, nesse caso altera de bem-vindo para hello world; 
+      let tit = document.getElementById("titulo").innerHTML = "Hello World";
+        // tit.style.display = 'none'; - deixa o item não visivel 
+
+      //outro modo de altera o conteudo 
+      var element = document.getElementById("id01");
+            element.innerHTML = "New Heading";
+
+      // VALOR
+
+      document.getElementById('title').attribute = "novo valor do atributo"
+      // MUDANDO O STYLE
+      document.getElementById(id).style.property = new style
+*/
+      let gg = document.querySelectorAll(".green");// seleciona todos objetos que pertencem a class que foi passada como parametro
+         for( let i = 0; i < gg.length; i ++){
+            gg[i].style.color = "red";
+            gg[1].style.color = 'blue';
+         }
+      let tit= document.getElementById("titulo");
+    
+      //tit.style.display = "none";
+      tit.style.backgroundColor = "Red";
+      tit.innerHTML  = "Novo Texto"
+      
+   
+      let center=document.querySelectorAll(".center");
+      for(let i = 0;i < center.length;i++){
+
+         center[i].style.color= "green";
+
+      }
+      
+      let hrlink = document.getElementById("link");
+      hrlink.setAttribute("class","content ");
+      hrlink.removeAttribute("style");
+      hrlink.setAttribute("href","https://uol.com.br");
+       if(hrlink.hasAttribute("style")){
+         console.log("Não era pra ter");
+      }
+
+     //CRIANDO ELEMENTO  NA DIV
+      let li = document.createElement("LI");
+      let textoLi =  document.createTextNode("Item lista");
+      li.appendChild(textoLi);
+      document.getElementById("minhaLista").appendChild(li);
+
+      //REMOVENDO UM ELEMENTO - para remover um nó , primeiro precisamos selecioná-lo.
+
+      let elemento= document.getElementById(ID);
+      let elementoFilho = elemento.children.item(nroItem);
+      elmento.removeChild(elementoFilho);
+
+
+      
+
+     
+         document.write(Date());// imprime data e hora local
+   </script>
+   </body>
+</html>

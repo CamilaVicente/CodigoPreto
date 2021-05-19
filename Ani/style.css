@@ -1,0 +1,139 @@
+
+body{ 
+    display:flex;
+    flex-direction:column;
+    justify-content:  space-evenly;
+    align-items:  center;
+    height: 100vh;
+
+}
+
+.red{
+
+    width: 60px;
+    height: 60px;
+    border-radius : 50%;
+    text-align: center;
+    display:flex;
+    justify-content:  center;
+    align-items:  center;
+    color: white;
+    background: red;
+    animation: animeRed  5s infinite alternate;
+    animation-timing-function: linear;
+
+    /*transition: width 2s, background-color 2s, border-radius 500ms;*/    
+}
+.red2{
+
+    width: 100px;
+    height: 100px;
+    border-radius : 50%;
+    text-align: center;
+    display:flex;
+    justify-content:  center;
+    align-items:  center;
+    color: white;
+    background: black;
+    animation: animeRed2  5s infinite alternate;
+    animation-timing-function: linear;
+
+    /*transition: width 2s, background-color 2s, border-radius 500ms;*/    
+}
+     /*   #linear {animation-timing-function: linear;}
+    #ease {animation-timing-function: ease;}
+    #ease-in {animation-timing-function: ease-in;}
+    #ease-out {animation-timing-function: ease-out;}
+    #ease-in-out {animation-timing-function: ease-in-out;}
+
+/*.red:hover{
+    width: 300px;
+    background-color: black;
+    border-radius:25%;
+    cursor: pointer;
+}
+/*quando ativarmos os item
+.red:active{
+    background-color:black;
+}*/
+
+@keyframes animeRed {
+  0% { 
+      transform: translateY(100px);
+   }
+  15%{ 
+    transform: translateX(90px);
+    background-color: blue;
+    animation-timing-function:  linear;
+  }
+  25%{
+      transform: rotateX(90deg);
+  }
+  35%{
+      transform:translateY(-100px);
+      background-color: blueviolet;
+    animation-timing-function:  linear;
+  }
+  45%{  
+      transform: rotateZ(90deg);     
+ }
+ 55% { 
+     transform:translateX(-100px) ;
+     background-color: purple ;
+    animation-timing-function:  linear;  
+}
+65%{
+    transform: rotateY(180deg);
+}
+  75% {
+      transform:translateY(100px) ;
+     background-color: black ; 
+    }
+    85%{
+        transform: perspective(90deg);
+    }
+    95%{transform: rotate3d(35deg);
+    }
+}
+@keyframes animeRed2 {
+  0% { 
+      transform: translateY(-200px);
+   }
+  15%{ 
+    transform: translateX(-50px);
+    background-color: blue;
+    animation-timing-function:  linear;
+  }
+  25%{
+      transform: rotateX(95deg);
+  }
+  35%{  
+      transform:translateY(100px);
+      background-color: blueviolet;
+    animation-timing-function:  linear;
+ }
+ 45%{
+     transform: rotateZ(-90deg);
+ }
+ 55% { 
+     transform:translateX(-300px) ;
+     background-color: purple ;
+    animation-timing-function:  linear;  
+}
+65%{
+    transform: rotateX(90deg);
+}
+75%{
+    transform:translateY(-350px) ;
+    transform: tr;
+    background-color: red ; }
+85%{
+    transform: perspective(180deg);
+}
+  95% {
+      transform:translateY(200px) ;
+    background-color: rgb(0, 255, 55) ; }
+      
+}
+
+
